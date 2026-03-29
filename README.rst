@@ -10,6 +10,7 @@ Overview
 The Blinky sample blinks an LED forever using the :ref:`GPIO API <gpio_api>`.
 
 The source code shows how to:
+Triggering a commit
 
 #. Get a pin specification from the :ref:`devicetree <dt-guide>` as a
    :c:struct:`gpio_dt_spec`
