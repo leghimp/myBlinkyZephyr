@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Zephyr Debug (Open OCD)",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/myBlinky/nucleo_l476rg/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "zephyr/boards/st/nucleo_l476rg/support/openocd.cfg"
+            ],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw"
+        }
+    ]
+}
