@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/sys/printk.h>
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   500
@@ -41,7 +42,7 @@ int main(void)
 		}
 
 		led_state = !led_state;
-		printf("LED state: %s\n", led_state ? "ON" : "OFF");
+		printk("LED state: %s\n", led_state ? "ON" : "OFF");
 		k_msleep(SLEEP_TIME_MS);
 	}
 	return 0;
